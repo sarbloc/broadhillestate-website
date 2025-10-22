@@ -20,13 +20,11 @@ export function Footer() {
         <div className="text-center sm:text-left">
           <H4 className="mb-1">Head office</H4>
           <p className="text-sm text-neutral-300 leading-6">
-            4 Old Park Lane
-            <br />
-            Mayfair
+            11-12 Old Bond Street
             <br />
             London
             <br />
-            W1K 1QW
+            W1S 4PN
             <br />
           </p>
         </div>
@@ -36,8 +34,6 @@ export function Footer() {
             2 Roding Lane South
             <br />
             Redbridge
-            <br />
-            Ilford
             <br />
             IG4 5NX
             <br />
