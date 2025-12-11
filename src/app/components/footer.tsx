@@ -1,6 +1,7 @@
 import logoSrc from '../assets/images/bh-logo.svg';
 import rmLogoSrc from '../assets/images/RM_Logo_NoStrap_White.png';
 import awardBanner from '../assets/images/british-property-awards-25.png';
+import estateAwardBanner from '../assets/images/british-property-awards-estate-agent-25.png';
 import Image from 'next/image';
 import { Copyright } from './copyright';
 import { FacebookIcon, InstagramIcon, MailIcon, PhoneIcon } from 'lucide-react';
@@ -9,8 +10,8 @@ import { H4 } from './typography';
 
 export function Footer() {
   return (
-    <footer className="flex flex-wrap gap-24 justify-center sm:justify-between p-10 relative z-10 bg-background">
-      <div className="flex flex-wrap justify-center sm:justify-start gap-24">
+    <footer className="flex flex-wrap gap-x-24 gap-y-8 justify-center sm:justify-between p-10 relative z-10 bg-background">
+      <div className="flex flex-wrap justify-center sm:justify-start gap-x-24 gap-y-8">
         <div className="flex flex-col gap-4 items-center sm:items-start">
           <div className="w-[100px] h-[100px]">
             <Image src={logoSrc} alt="Broadhill Estate" />
@@ -67,6 +68,13 @@ export function Footer() {
           <Image
             src={awardBanner}
             alt="British Property Awards 2024 - 2025, Gold winner for letting agent in IG4-6"
+            className="w-80"
+          />
+        </div>
+        <div className="h-40">
+          <Image
+            src={estateAwardBanner}
+            alt="British Property Awards 2025, Gold winner for estate agent in IG4-6"
             className="w-80"
           />
         </div>
