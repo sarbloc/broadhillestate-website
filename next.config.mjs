@@ -16,6 +16,10 @@ const nextConfig = {
       },
     ],
   },
-}
+  // Optimize for static generation and Edge runtime
+  experimental: {
+    optimizePackageImports: ['lucide-react', '@radix-ui/react-icons'],
+  },
+};
 
-export default nextConfig
+export default nextConfig;

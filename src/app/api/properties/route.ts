@@ -2,6 +2,10 @@ import { TypeProperty } from '@/app/generated-types';
 import { contentfulClient } from '@/app/libs/contenful-client';
 import { mapsClient } from '@/app/libs/google-maps-client';
 
+// Cache API responses with webhook-based revalidation
+// Fallback to 24 hours if webhook fails
+export const revalidate = 86400;
+
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const location = searchParams.get('location');
